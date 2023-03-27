@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sejam Bem Vindos (as)!</h1>
+    <form>
+        <label for="firstName">First name:</label><br>
+        <input type="text" id="firstName" name="firstName" value="Digite aqui seu nome"><br>
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName" value="Digite aqui seu sobrenome"><br><br>
+        <button id="btnEnviar" type="submit">Enviar</button>
+      </form> 
+
+    <script>
+        const buttonEnviar =  document.getElementById("btnEnviar")
+        console.log(buttonEnviar)
+        buttonEnviar.addEventListener("click", function enviar(){
+            document.write("Formulário enviado com sucesso!")
+        })
+    </script>
+</body>
+</html>
